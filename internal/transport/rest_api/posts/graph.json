@@ -1,0 +1,190 @@
+{
+  "nodes": {
+    "blockchain": {
+      "name": "Блокчейн"
+    },
+    "decentralization": {
+      "name": "Децентрализация"
+    },
+    "daap": {
+      "name": "DApp"
+    },
+    "p2p": {
+      "name": "P2P"
+    },
+    "ethereum_platform": {
+      "name": "Ethereum(platform)"
+    },
+    "transaction": {
+      "name": "Транзакция"
+    },
+    "coinbase": {
+      "name": "Coinbase"
+    },
+    "off-chain": {
+      "name": "Off-chain"
+    },
+    "cryptocurrency": {
+      "name": "Криптовалюты"
+    },
+    "ethereum":{
+      "name": "Эфириум (криптовалюта)"
+    },
+    "bitcoin": {
+      "name": "Биткоин"
+    },
+    "nonce": {
+      "name": "nonce"
+    },
+    "mining": {
+      "name": "Майнинг"
+    },
+    "miners": {
+      "name": "Майнеры"
+    },
+    "asic": {
+      "name": "ASIC"
+    },
+    "bip":{
+      "name": "BIP"
+    }
+  },
+  "edges": {
+    "decentralization": {
+      "source": "blockchain",
+      "target": "decentralization"
+    },
+    "daap": {
+      "source": "decentralization",
+      "target": "daap"
+    },
+    "p2p": {
+      "source": "decentralization",
+      "target": "p2p"
+    },
+    "ethereum_platform": {
+      "source": "decentralization",
+      "target": "ethereum_platform"
+    },
+
+    "transaction": {
+      "source": "blockchain",
+      "target": "transaction"
+    },
+    "coinbase": {
+      "source": "transaction",
+      "target": "coinbase"
+    },
+    "off-chain":{
+      "source": "transaction",
+      "target": "off-chain"
+    },
+
+
+    "cryptocurrency": {
+      "source": "blockchain",
+      "target": "cryptocurrency"
+    },
+    "ethereum":  {
+      "source": "cryptocurrency",
+      "target": "ethereum"
+    },
+    "bitcoin": {
+      "source": "cryptocurrency",
+      "target": "bitcoin"
+    },
+    "nonce": {
+      "source": "bitcoin",
+      "target": "nonce"
+    },
+
+    "mining": {
+      "source": "blockchain",
+      "target": "mining"
+    },
+    "miners": {
+      "source": "mining",
+      "target": "miners"
+    },
+    "asic": {
+      "source": "mining",
+      "target": "asic"
+    },
+    "bip": {
+      "source": "mining",
+      "target": "bip"
+    }
+
+  },
+  "layouts": {
+    "nodes": {
+      "blockchain": {
+        "x": 0,
+        "y": 0
+      },
+      "decentralization": {
+        "x": 0,
+        "y": -100
+      },
+      "daap": {
+        "x": -100,
+        "y": -200
+      },
+      "p2p": {
+        "x": 0,
+        "y": -200
+      },
+      "ethereum_platform": {
+        "x": 100,
+        "y": -200
+      },
+      "transaction": {
+        "x": 100,
+        "y": 0
+      },
+      "coinbase": {
+        "x": 200,
+        "y": 100
+      },
+      "off-chain": {
+        "x": 200,
+        "y": -100
+      },
+
+      "cryptocurrency": {
+        "x": 0,
+        "y": 100
+      },
+      "ethereum": {
+        "x": -100,
+        "y": 200
+      },
+      "bitcoin":{
+        "x": 100,
+        "y": 200
+      },
+      "nonce": {
+        "x": 200,
+        "y": 200
+      },
+
+
+      "mining": {
+        "x": -100,
+        "y": 0
+      },
+      "miners": {
+        "x": -200,
+        "y": -100
+      },
+      "asic": {
+        "x": -200,
+        "y": 0
+      },
+      "bip":  {
+        "x": -200,
+        "y": 100
+      }
+    }
+  }
+}
